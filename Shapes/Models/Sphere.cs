@@ -11,9 +11,9 @@ namespace Shapes.Models
       Circle = circle;
     }
 
-    public int GetSurfaceArea()
+    public double GetSurfaceArea()
     {
-      return 0;
+      return Math.Round(4 * Math.PI * Math.Pow(Circle.Radius, 2), 2);
     }
 
     public double GetVolume()
