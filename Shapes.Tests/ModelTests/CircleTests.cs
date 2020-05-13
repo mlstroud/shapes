@@ -1,5 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+
 using Shapes.Models;
 
 namespace Shapes.TestTools
@@ -22,7 +22,7 @@ namespace Shapes.TestTools
     {
       Circle newCircle = new Circle(5);
 
-      Decimal result = newCircle.GetCircumference();
+      double result = newCircle.GetCircumference();
 
       Assert.AreEqual(result, 31.42);
     }
