@@ -1,3 +1,4 @@
+using System;
 namespace Shapes.Models
 {
   public class Circle
@@ -12,6 +13,11 @@ namespace Shapes.Models
     public int GetDiameter()
     {
       return Radius * 2;
+    }
+
+    public double GetCircumference()
+    {
+      return Math.Round((Radius * 2) * Math.PI, 2);
     }
   }
 }
