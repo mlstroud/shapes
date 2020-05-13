@@ -16,5 +16,16 @@ namespace Shapes.Tests
 
       Assert.AreEqual(result, 64);
     }
+
+    [TestMethod]
+    public void Cube_GetSurfaceArea_SurfaceAreaOfCube()
+    {
+      Rectangle newRectangle = new Rectangle(4, 4);
+      Cube newCube = new Cube(newRectangle);
+
+      int result = newCube.GetSurfaceArea();
+
+      Assert.AreEqual(result, 96);
+    }
   }
 }
